@@ -1,0 +1,55 @@
+@import "_modules/_bits.scss";
+
+.form-control{ 
+	width: 75%;
+	margin: 0 auto;
+	@include border-radius;	
+	@include box-shadow-inset;
+}
+.form-group {
+	input{
+		background-color: rgba(246, 246, 246, 0.3);
+		border-bottom: 1px #fff;
+	}
+}
+.form-title{
+	height: auto;
+	min-height: 30px;
+	margin-top: 10px;
+}
+.form-content{
+	height: auto;
+	min-height: 100px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.form-comment{
+	height: auto;
+	min-height: 100px;
+	@include box-shadow-inset;
+}
+.form-edit{
+	height: auto;
+	min-height: 200px;
+	@include box-shadow-inset;
+	overflow: auto;
+}
+.btn-control{ 
+	text-align: center; 
+	margin-top: 10px;
+}
+.btn-group{
+	display: block !important;
+	margin: 0 auto;
+}
+.btn {
+	display: inline-block;
+	margin: 5px;
+	float: none !important;
+	@include box-shadow;
+	@include border-radius;
+	&:hover{
+		transform: translateY(-1px);
+		@include box-shadow-hover;
+	}
+}

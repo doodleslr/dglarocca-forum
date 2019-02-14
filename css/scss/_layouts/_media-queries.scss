@@ -1,0 +1,399 @@
+@import "_modules/_bits.scss";
+
+.page-header {
+    @include MD {
+    	margin: 10px 0px;
+    }
+    @include SM {
+    	margin: 10px 0px;
+	}
+    @include XS {
+    	margin: 10px 0px;
+	}
+}
+.wrapper {
+	@include SM {
+		width: 85%;
+		padding: 10px;
+	}
+	@include XS {
+		width: 90%;
+		padding: 10px;
+	}
+}
+#wrap-main {
+	@include XL {
+    	transform: translate(-50%, -50%);
+    }
+    @include LG {
+    	transform: translate(-50%, -50%);
+    }
+    @include MD {
+    	width: 80%;
+    	height: 70%;
+    	transform: translate(-50%, -65%);
+    }
+    @include SM {
+    	width: 85%;
+    	height: 65%;
+    	transform: translate(-50%, -60%);
+	}
+    @include XS {
+    	width: 90%;
+    	height: auto;
+    	max-height: 95%;
+    	transform: translate(-50%, -53%);
+	}
+}
+.font-title {
+	@include XL {
+		font-size: 2em;
+    }
+    @include LG {
+    	font-size: 1.6em;
+    }
+    @include MD {
+    	font-size: 1.4em;
+    }
+    @include SM {
+    	font-size: 1.1em;
+	}
+    @include XS {
+    	font-size: 1em;
+	}
+}
+.font-main {
+	@include XL {
+		font-size: 2em;
+    }
+    @include LG {
+    	font-size: 1.5em;
+    }
+    @include MD {
+    	font-size: 1em;
+    }
+    @include SM {
+    	font-size: 1em;
+	}
+    @include XS {
+    	font-size: 0.6em;
+	}
+}
+hr {
+	@include SM {
+		margin: 5px;
+	}
+	@include XS {
+		margin: 5px;
+	}
+}
+.form-group {
+	@include LG {
+		input[type='text'] {
+			font-size: 2em;
+		}
+		input[type='password'] {
+			font-size: 2em;
+		}
+	}
+	@include MD {
+		input[type='text'] {
+			font-size: 1.5em;
+		}
+		input[type='password'] {
+			font-size: 1.5em;
+		}
+	}
+	@include SM {
+		input[type='text'] {
+			font-size: 1em;
+		}
+		input[type='password'] {
+			font-size: 1em;
+		}
+		margin-bottom: 5px;
+	}
+	@include XS {
+		input[type='text'] {
+			font-size: 1em;
+		}
+		input[type='password'] {
+			font-size: 1em;
+		}
+		margin-bottom: 5px;
+	}
+	input {
+		@include LG {
+			height: 70px;
+		}
+		@include MD {
+			height: 60px;
+		}
+		@include SM {
+			width: 90%;
+			margin: 5px auto;
+		}
+		@include XS {
+			width: 90%;
+			margin: 5px auto;
+		}
+	}
+}
+.btn-control {
+	input {
+		@include XL {
+			font-size: 1.5em;
+			height: 60px;
+			width: 130px
+	    }
+	    @include LG {
+	    	font-size: 1.5em;
+	    	height: 60px;
+	    	width: 130px
+	    }
+	    @include MD {
+	    	font-size: 1.5em;
+	    	height: 60px;
+	    	width: 130px
+	    }
+	}
+}
+.welcome-btn {
+	a {
+		@include XL {
+			height: 50px;
+			max-width: 250px;
+			font-size: 1.5em;
+	    }
+	    @include LG {
+	    	height: 50px;
+			max-width: 250px;
+			font-size: 1.5em;
+	    }
+	    @include MD {
+			height: 50px;
+			max-width: 250px;
+			font-size: 1.2em;
+	    }
+	    @include SM {
+	    	height: 40px;
+	    	max-width: 200px;
+	    	font-size: 0.8em;
+	    	font-weight: bold;
+		}
+	    @include XS {
+	    	height: 30px;
+	    	max-width: 200px;
+	    	font-size: 0.5em;
+	    	font-weight: bold;
+		}
+
+	}
+}
+.holder-title {
+	h4 {
+		@include XL {
+			font-size: 2em;
+	    }
+	    @include LG {
+	    	font-size: 1.5em;
+	    }
+	    @include MD {
+	    	font-size: 0.9em;
+	    	font-weight: bold;
+	    }
+	    @include SM {
+	    	font-size: 0.7em;
+	    	font-weight: bold;
+		}
+	    @include XS {
+	    	font-size: 0.5em;
+	    	font-weight: bold;
+		}
+	}
+}
+.holder-content {
+	@include XL {
+		font-size: 1.5em;
+    }
+    @include LG {
+    	font-size: 1em;
+    }
+    @include MD {
+    	font-size: 0.8em;
+    	padding: 5px;
+    }
+    @include SM {
+    	font-size: 0.6em;
+    	padding: 5px;
+	}
+    @include XS {
+    	font-size: 0.5em;
+    	padding: 5px;
+	}
+}
+.holder-arrows {
+	@include XL {
+		padding: 0px 18px 0px 0px;
+		.score {
+			padding-left: 11px;
+		}
+    }
+    @include LG {
+		padding: 0px 40px 0px 0px;
+		.score {
+			padding-left: 25px;
+		}
+    }
+    @include MD {
+		padding: 0px 44px 0px 0px;
+		.score {
+			padding-left: 10px;
+		}
+    }
+    @include SM {
+		padding: 0px 34px 0px 0px;
+		.score {
+			padding-left: 9px;
+		}
+	}
+    @include XS {
+		padding: 0px 18px 0px 0px;
+		.score {
+			padding-left: 11px;
+		}
+	}
+}
+.action {
+    @include LG {
+    	margin-bottom: 70px;
+		border-radius: 10px 10px 0px 0px;
+	    -moz-border-radius: 10px 10px 0px 0px;
+	    -webkit-border-radius: 10px 10px 0px 0px;
+    }
+    @include MD {
+    	margin-bottom: 60px;
+		border-radius: 10px 10px 0px 0px;
+	    -moz-border-radius: 10px 10px 0px 0px;
+	    -webkit-border-radius: 10px 10px 0px 0px;
+    }
+    @include SM {
+		margin-bottom: 50px;
+		border-radius: 10px 10px 0px 0px;
+	    -moz-border-radius: 10px 10px 0px 0px;
+	    -webkit-border-radius: 10px 10px 0px 0px;
+	}
+    @include XS {
+		margin-bottom: 50px;
+		border-radius: 10px 10px 0px 0px;
+	    -moz-border-radius: 10px 10px 0px 0px;
+	    -webkit-border-radius: 10px 10px 0px 0px;
+	}
+}
+.edit-content {
+	@include XL {
+		position: absolute;
+		right: -120px;
+		top: 0px;
+	    margin: auto;
+	    width: 120px;
+	    height: 75px;
+	    border-radius: 0px 10px 10px 0px;
+		-moz-border-radius: 0px 10px 10px 0px;
+		-webkit-border-radius: 0px 10px 10px 0px;
+	}
+	@include LG {
+		position: absolute;
+		top: inherit;
+		right: 0;
+		left: 0;
+		width: 100%;
+		height: auto;
+		border-radius: 0px 0px 10px 10px;
+	    -moz-border-radius: 0px 0px 10px 10px;
+	    -webkit-border-radius: 0px 0px 10px 10px;
+		p {
+			display: inline-block;
+			width: 45%;
+		}
+		.del-button {
+			float: right;
+		}
+	}
+	@include MD {
+		position: absolute;
+		top: inherit;
+		right: 0;
+		left: 0;
+		width: 100%;
+		height: auto;
+		border-radius: 0px 0px 10px 10px;
+	    -moz-border-radius: 0px 0px 10px 10px;
+	    -webkit-border-radius: 0px 0px 10px 10px;
+		p {
+			display: inline-block;
+			width: 45%;
+		}
+		.del-button {
+			float: right;
+		}
+	}
+	@include SM {
+		position: absolute;
+		top: inherit;
+		right: 0;
+		left: 0;
+		width: 100%;
+		height: auto;
+		border-radius: 0px 0px 10px 10px;
+	    -moz-border-radius: 0px 0px 10px 10px;
+	    -webkit-border-radius: 0px 0px 10px 10px;
+		p {
+			display: inline-block;
+			width: 45%;
+		}
+		.del-button {
+			float: right;
+		}
+	}
+	@include XS {
+		position: absolute;
+		top: inherit;
+		right: 0;
+		left: 0;
+		width: 100%;
+		height: auto;
+		border-radius: 0px 0px 10px 10px;
+	    -moz-border-radius: 0px 0px 10px 10px;
+	    -webkit-border-radius: 0px 0px 10px 10px;
+		p {
+			display: inline-block;
+			width: 45%;
+		}
+		.del-button {
+			float: right;
+		}
+	}
+}
+.confirm-content, .delete-content {
+	@include XL {
+		width: 70%;
+		height: 150px;
+    }
+    @include LG {
+    	width: 70%;
+    	height: 150px;
+    }
+    @include MD {
+    	width: 70%;
+    	height: 150px;
+    }
+    @include SM {
+    	width: 80%;
+    	height: 150px;
+	}
+    @include XS {
+    	width: 90%;
+    	height: 150px;
+	}
+}

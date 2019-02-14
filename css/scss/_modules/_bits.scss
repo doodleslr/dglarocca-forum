@@ -1,0 +1,60 @@
+//text colours
+$beige: #f3eded;
+
+//media queries
+$xtra-large:"screen and (min-width: 992px)";
+$large:"(min-width: 768px) and (max-width: 991px)";
+$medium:"(min-width: 600px) and (max-width: 767px)";
+$small:"(min-width: 480px) and (max-width: 599px)";
+$xtra-small:"only screen and (max-width: 479px)";
+
+@mixin XL {
+  @media #{$xtra-large} {
+    @content;
+  }
+}
+@mixin LG {
+  @media #{$large} {
+    @content;
+  }
+}
+@mixin MD {
+  @media #{$medium} {
+    @content;
+  }
+}
+@mixin SM {
+  @media #{$small} {
+    @content;
+  }
+}
+@mixin XS {
+  @media #{$xtra-small} {
+    @content;
+  }
+}
+
+@mixin box-shadow-inset {
+    -webkit-box-shadow: inset 0px 1px 3px -1px #555;
+    -moz-box-shadow:    inset 0px 1px 3px -1px #555;
+    box-shadow:         inset 0px 1px 3px -1px #555;
+}
+@mixin box-shadow {
+    -webkit-box-shadow: 0px 1px 2px -1px #555;
+    -moz-box-shadow:    0px 1px 2px -1px #555;
+    box-shadow:         0px 1px 2px -1px #555;
+}
+@mixin box-shadow-hover {
+    -webkit-box-shadow: 0px 2px 3px -2px #555;
+    -moz-box-shadow:    0px 2px 3px -2px #555;
+    box-shadow:         0px 2px 3px -2px #555;
+}
+@mixin border-radius {
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+@mixin bg-shadow{
+    text-shadow: 1px 1px 2px #fff;
+}

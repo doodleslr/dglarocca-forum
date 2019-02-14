@@ -1,0 +1,79 @@
+@import "_modules/_bits.scss";
+
+html{ 
+	height: 100%; 
+}
+body{ 
+	height: 100%;
+	background: #ffebd4;
+	color: #2E1C2B;
+	background-repeat: no-repeat;
+	background-position: left center, right center;
+	background-attachment: fixed;
+	@include XL {
+		font-size: 14px;
+    }
+	@include LG {
+		background-size: cover;
+		font-size: 16px;
+	}
+	@include MD {
+		background-size: cover;
+		font-size: 18px;
+	}
+	@include SM {
+		background-size: cover;
+		font-size: 20px;
+	}
+	@include XS {
+		background-size: cover;
+		font-size: 22px;
+	}
+}
+hr {
+	border-color: #fcdebe;
+}
+.wrapper{ 
+	width: 75%;
+	max-width: 1200px;
+	margin: 10px auto; 
+	padding: 20px;
+	@include border-radius;
+}
+#wrap-main{
+	background: #fcdebe;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+}
+.content-img{
+	display: block;
+	margin: 0 auto;
+	height: auto;
+	width: auto;
+	max-width: 100%;
+}
+.content{ 
+	padding: 5px;
+	overflow: hidden;
+}
+.contentWrap{ 
+	background: #fcdebe; 
+	padding: 10px 5px; 
+	margin: 10px 0px;
+	@include border-radius;
+	&:nth-child(odd){ 
+		background: #ffe7cc;
+	}
+}
+.page-header{
+	border-style: none;
+}
+.title{ 
+	text-align: center; 
+	margin: 0;
+}
+.post-title{
+	display: block;
+	text-align: center;
+}
